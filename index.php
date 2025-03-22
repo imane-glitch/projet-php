@@ -92,5 +92,11 @@ if (isset($_POST["logout"])) {
     </form>
 <?php endif; ?>
 
+<form action="upload.php" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" required>
+    <input type="email" name="autorise" placeholder="Autoriser un utilisateur (email)">
+    <button type="submit">Envoyer</button>
+</form>
+
 </body>
 </html>
